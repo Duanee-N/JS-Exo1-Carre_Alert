@@ -1,0 +1,26 @@
+<!DOCTYPEhtml>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>JS-Exo1-Carre_Alert</title>
+    </head>
+    <body>
+        <div id="box">Texte</div>
+        <script>
+            const box=document.querySelector("#box")
+            box.classList.add("box")
+
+            box.addEventListener("click", function(){
+                let color=getComputedStyle(box, null).color
+                let backgroundColor=getComputedStyle(box, null).backgroundColor
+                let width=getComputedStyle(box, null).width
+                let height=getComputedStyle(box, null).height
+                let fontFamily=getComputedStyle(box, null).fontFamily
+                let fontSize=getComputedStyle(box, null).fontSize
+                // getComputedStyle() permet de récupérer les propriétés CSS qui ne se trouvent pas dans le fichier JS
+                alert(" Class : "+box.className+"\n Color : "+color+"\n Background-color : "+backgroundColor+"\n Width : "+width+"\n Height : "+height+"\n Font-family : "+fontFamily+"\n Font-size : "+fontSize)
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+/* ***************GENERAL*************** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ***************BODY*************** */
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: #7e439ed1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color:black;
+    font-family:  'Poppins' , sans-serif;
+    font-size: 3em;
+    text-align: center;
+    cursor: pointer;
+}
